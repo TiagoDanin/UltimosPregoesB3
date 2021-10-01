@@ -14,6 +14,9 @@ class Paper {
 		this.openPrice = openPrice;
 		this.closePrice = closePrice;
 		this.date = date;
+		this.maxPrice = maxPrice;
+		this.minPrice = minPrice;
+		this.medPrice = medPrice;
 	}
 
 	get getId() {
