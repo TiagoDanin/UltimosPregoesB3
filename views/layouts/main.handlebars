@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Ultimos Pregões</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/uikit/css/uikit.min.css" />
+	<link rel="stylesheet" href="/css/theme.css" />
+	<link rel="stylesheet" href="/css/style.css" />
+
+	<script src="/uikit/js/uikit.min.js"></script>
+	<script src="/uikit/js/uikit-icons.min.js"></script> 
+	{{#isDevMode}}
+		<script src="/reload/reload.js"></script>
+	{{/isDevMode}}
+</head>
+
+<body>
+	<nav class="uk-navbar-container" uk-navbar="mode: click" id="menu-top">
+		<div class="uk-navbar-left">
+			<ul class="uk-navbar-nav">
+				<li>
+					<a href="#">Ultimos Pregões</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div id="uk-container">
+		{{{body}}}
+	</div>
+</body>
+
+</html>

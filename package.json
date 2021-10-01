@@ -1,0 +1,88 @@
+{
+	"name": "psqlstatsshow",
+	"main": "index.js",
+	"bin": {
+		"psqlstatsshow": "index.js"
+	},
+	"preferGlobal": true,
+	"version": "1.0.2",
+	"description": "Web Monitoring PostgreSQL- Tracking execution statistics of all SQL statements executed by a server.",
+	"author": {
+		"email": "TiagoDanin@outlook.com",
+		"name": "Tiago Danin",
+		"url": "https://TiagoDanin.github.io"
+	},
+	"license": "MIT",
+	"keywords": [
+		"admin-dashboard",
+		"monitor",
+		"monitoring-server",
+		"performance",
+		"performance-analysis",
+		"postgres",
+		"postgresql",
+		"server-monitor",
+		"server-monitoring",
+		"sql",
+		"stat",
+		"statements",
+		"statistics",
+		"stats"
+	],
+	"scripts": {
+		"start": "node index.js",
+		"dev": "nodemon --watch views --watch index.js --watch css --watch base -e handlebars,js,css js index.js --dev --password 1234",
+		"test": "xo"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"private": false,
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/TiagoDanin/PSQL-StatsShow.git"
+	},
+	"homepage": "https://TiagoDanin.github.io/PSQL-StatsShow",
+	"bugs": {
+		"url": "https://github.com/TiagoDanin/PSQL-StatsShow/issues"
+	},
+	"github": {
+		"name": "PSQL-StatsShow",
+		"owner": "TiagoDanin"
+	},
+	"files": [
+		"LICENSE",
+		"README.md",
+		"base",
+		"css",
+		"index.js",
+		"package.json",
+		"views"
+	],
+	"dependencies": {
+		"body-parser": "^1.19.0",
+		"cookie-session": "^2.0.0-rc.1",
+		"express": "^4.17.1",
+		"express-handlebars": "5.3.2",
+		"handlebars-helpers": "^0.10.0",
+		"minimist": "^1.2.5",
+		"pg": "8.3.3",
+		"pg-native": "3.0.0",
+		"reload": "^3.1.1",
+		"uikit": "^3.6.22"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.7",
+		"xo": "0.39.1"
+	},
+	"xo": {
+		"rules": {
+			"quote-props": "warn",
+			"eqeqeq": "warn",
+			"array-callback-return": "warn",
+			"require-atomic-updates": "warn",
+			"no-else-return": "warn"
+		},
+		"semicolon": false
+	}
+}
