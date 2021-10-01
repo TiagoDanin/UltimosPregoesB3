@@ -254,6 +254,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@handlebars/allow-prototype-access@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@handlebars/allow-prototype-access/-/allow-prototype-access-1.0.5.tgz#364384d1879765aad210a61becd849afab3954b3"
+  integrity sha512-D5AJO9dM6B+1scVVQ4ma05cAku5M2dEnlycggIg6RW539TdQlgbNg1G1r86fNqqNI0CHv/TVwKEB9M6ILJQCWQ==
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"

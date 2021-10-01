@@ -31,7 +31,7 @@
 	],
 	"scripts": {
 		"start": "node index.js",
-		"dev": "nodemon --watch views --watch index.js --watch css --watch base -e handlebars,js,css js index.js --dev --password 1234",
+		"dev": "nodemon --watch views --watch routes --watch index.js --watch css --watch base -e handlebars,js,css js index.js --dev --password 1234",
 		"test": "xo"
 	},
 	"engines": {
@@ -60,6 +60,7 @@
 		"views"
 	],
 	"dependencies": {
+		"@handlebars/allow-prototype-access": "^1.0.5",
 		"body-parser": "^1.19.0",
 		"cookie-session": "^2.0.0-rc.1",
 		"express": "^4.17.1",
