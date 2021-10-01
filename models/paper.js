@@ -1,4 +1,3 @@
-const { date } = require('handlebars-helpers/lib');
 const Moment = require('moment')
 class Paper {
 	constructor(
