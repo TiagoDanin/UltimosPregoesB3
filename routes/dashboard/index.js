@@ -18,6 +18,9 @@ const dashboard = async (req, res) => {
 			paper.setOpenPrice(data.PREABE)
 			paper.setClosePrice(data.PREULT)
 			paper.setDate(data.DATPRG)
+			paper.setMaxPrice(data.PREMAX)
+			paper.setMinPrice(data.PREMIN)
+			paper.setMedPrice(data.PREMED)
 			result.push(paper)
 		}
 	}
